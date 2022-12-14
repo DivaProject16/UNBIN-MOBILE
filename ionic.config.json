@@ -1,0 +1,7 @@
+{
+  "name": "UNBIN_Mobile",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
