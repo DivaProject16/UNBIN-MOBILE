@@ -1,17 +1,160 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-menu contentId="main-content">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-content class="ion-padding">Sistem Informasi</ion-content>
+  <ion-content class="ion-padding">Teknik Informatika</ion-content>
+  <ion-content class="ion-padding">Teknologi Informasi</ion-content>
+  <ion-label>Fakultas Informatika dan Komputer</ion-label>
+</ion-menu>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+<div class="ion-page" id="main-content">
+  <ion-header class="head">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-button (click)="Logout()" size="big" fill="clear"><ion-icon slot="end" name="log-out-outline"></ion-icon> </ion-button>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <div class="main_content_via">
+      <div class="via_user">
+          <ion-avatar class="img">
+            <img src="https://i.postimg.cc/mk0Ksx2V/Logo-Bulat-UNBIN.jpg" alt="">
+          </ion-avatar>
+        <div class="first_div">
+          <ion-label style="text-align: right" class="Welcome">Diva Rizqa Maharani</ion-label>
+          <ion-label style="text-align: right" class="no">Sistem Informasi (SI)</ion-label>
+          <ion-label style="text-align: right" 
+          class="thanks">Universitas Binaniaga</ion-label>
+       </div>
+        <ion-avatar class="img">
+          <img src="https://i.postimg.cc/pr8krdRg/divv.jpg" alt="">
+        </ion-avatar>
+      </div>
+    </div>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="dipdip">
+          <h1>3.4</h1>
+          <p>IP Kumulatif</p>
+        </ion-col>
+        <ion-col class="dipdip">
+          <h1>21</h1>
+          <p>SKS Tempuh</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  <ion-slides>
+    <ion-slide>
+      <div class="slide">
+        <ion-row>
+          <ion-col size="4">
+            <ion-card routerLink="/tab4">
+              <ion-card-content>
+                <div style="text-align: center;">
+                  <ion-card-title><img src="https://cdn-icons-png.flaticon.com/512/8955/8955096.png" alt=""></ion-card-title>
+                </div>
+              </ion-card-content>
+            </ion-card>
+            <p>Jadwal</p>
+          </ion-col>
+  
+          <ion-col size="4">
+            <ion-card routerLink="/tab4">
+              <ion-card-content>
+                <div style="text-align: center;">
+                  <ion-card-title><b><img src="https://cdn-icons-png.flaticon.com/512/3588/3588206.png" alt=""></b></ion-card-title>
+                </div>
+              </ion-card-content>
+            </ion-card>
+            <p>Presensi</p>
+          </ion-col>
+  
+          <ion-col size="4">
+            <ion-card routerLink="/tab4">
+              <ion-card-content>
+                <div style="text-align: center;">
+                  <ion-card-title><b></b><img src="https://cdn-icons-png.flaticon.com/512/2972/2972160.png" alt=""></ion-card-title>
+                </div>
+              </ion-card-content>
+            </ion-card>
+            <p>Nilai</p>
+          </ion-col>
+  
+          <ion-col size="4">
+            <ion-card routerLink="/tab2">
+              <ion-card-content>
+                <div style="text-align: center;">
+                  <ion-card-title><b><img src="https://i.postimg.cc/YqKSWJ7q/report.png" alt=""></b></ion-card-title>
+                </div>
+              </ion-card-content>
+            </ion-card>
+            <p>Bahasa & Tugas</p>
+          </ion-col>
+  
+          <ion-col size="4">
+            <ion-card routerLink="/tab4">
+              <ion-card-content>
+                <div style="text-align: center;">
+                  <ion-card-title><img src="https://cdn-icons-png.flaticon.com/512/3227/3227053.png" alt=""><b></b></ion-card-title>
+                </div>
+              </ion-card-content>
+            </ion-card>
+            <p>KRSS/KRS</p>
+          </ion-col>
+  
+          <ion-col size="4">
+            <ion-card>
+              <ion-card-content>
+                <div style="text-align: center;">
+                  <ion-card-title><b><img src="https://cdn-icons-png.flaticon.com/512/3829/3829933.png" alt=""></b></ion-card-title>
+                </div>
+              </ion-card-content>
+            </ion-card>
+            <p>TA/Wisuda</p>
+          </ion-col>
+
+          <ion-col size="4">
+            <ion-card>
+              <ion-card-content>
+                <div style="text-align: center;">
+                  <ion-card-title><b><img src="https://cdn-icons-png.flaticon.com/512/5792/5792505.png" alt=""></b></ion-card-title>
+                </div>
+              </ion-card-content>
+            </ion-card>
+            <p>Kegiatan</p>
+          </ion-col>
+  
+          <ion-col size="4">
+            <ion-card>
+              <ion-card-content>
+                <div style="text-align: center;">
+                  <ion-card-title><img src="https://cdn-icons-png.flaticon.com/512/7676/7676219.png" alt=""><b></b></ion-card-title>
+                </div>
+              </ion-card-content>
+            </ion-card>
+            <p>Biaya Kuliah</p>
+          </ion-col>
+  
+          <ion-col size="4">
+            <ion-card>
+              <ion-card-content>
+                <div style="text-align: center;">
+                  <ion-card-title><b><img src="https://cdn-icons-png.flaticon.com/512/4470/4470859.png" alt=""></b></ion-card-title>
+                </div>
+              </ion-card-content>
+            </ion-card>
+            <p>Kuesioner</p>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-slide>
+  </ion-slides>
+  </ion-content>
+  
+</div>

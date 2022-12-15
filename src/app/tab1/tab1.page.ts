@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import axios from 'axios';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +9,14 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  public allData:any = [];
+  constructor(private route: Router) {
+  }
 
+  Logout(){
+    this.route.navigate(['/tab1'])
+  }
+
+
+    
 }
